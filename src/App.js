@@ -23,7 +23,7 @@ function App() {
 
     {gifts.map((element => {
       const {id, name, description, price, image } = element;
-      return (<div className='box'>
+      return (<div className='box'key={id}>
         
         <div>
           <img src={image} width='300px'/>
